@@ -50,6 +50,7 @@ Auto Fix  Planning
 | 2026-09-16 | [Claude Code Hooks + First Gate](./2026-09-16-claude-code-hooks-first-gate.md) |
 | 2026-09-17 | [Claude Code Hook + Requirement Gate](./2026-09-17-claude-code-hook-requirement-gate.md) |
 | 2026-09-18 | [Requirement Gate FAIL → Auto Fix](./2026-09-18-requirement-gate-auto-fix.md) |
+| 2026-09-19 | [Planning Skill Input / Output](./2026-09-19-planning-skill-input-output.md) |
 
 ## 核心迭代
 
@@ -73,3 +74,4 @@ Planning → Figma → Implementation → Test → E2E → AI Acceptance → Hum
 - Gate 負責驗收，Auto Fix 負責修正，不讓 Auto Fix 自己宣布 PASS。
 - BLOCKED 不進自動修復，避免 AI 在缺少必要資訊時自行猜測。
 - Auto Fix 必須有修改範圍與 Retry 上限。
+- Skill 建議依責任拆分，並明確定義 Input / Output Contract。
