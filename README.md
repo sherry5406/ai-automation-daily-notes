@@ -52,6 +52,8 @@ Auto Fix  Planning
 | 2026-09-18 | [Requirement Gate FAIL → Auto Fix](./2026-09-18-requirement-gate-auto-fix.md) |
 | 2026-09-19 | [Planning Skill Input / Output](./2026-09-19-planning-skill-input-output.md) |
 | 2026-09-20 | [Planning Gate Script](./2026-09-20-planning-gate-script.md) |
+| 2026-09-21 | [Planning Gate → Auto Fix → Re-Gate](./2026-09-21-planning-gate-auto-fix.md) |
+| 2026-09-22 | [Planning → Figma → Implementation Contract](./2026-09-22-planning-figma-implementation-contract.md) |
 
 ## 核心迭代
 
