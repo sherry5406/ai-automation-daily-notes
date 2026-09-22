@@ -54,6 +54,7 @@ Auto Fix  Planning
 | 2026-09-20 | [Planning Gate Script](./2026-09-20-planning-gate-script.md) |
 | 2026-09-21 | [Planning Gate → Auto Fix → Re-Gate](./2026-09-21-planning-gate-auto-fix.md) |
 | 2026-09-22 | [Planning → Figma → Implementation Contract](./2026-09-22-planning-figma-implementation-contract.md) |
+| 2026-09-23 | [YAML Workflow 01：Node + Dependency](./2026-09-23-yaml-workflow-01-node-dependency.md) |
 
 ## 核心迭代
 
@@ -69,6 +70,20 @@ Skill → Gate → Auto Fix → Gate → PASS
 Planning → Figma → Implementation → Test → E2E → AI Acceptance → Human Gate → PR
 ```
 
+並將已驗證的流程逐步抽象成：
+
+```text
+YAML Workflow
+  ↓
+Node
+  ↓
+Dependency
+  ↓
+on_pass / on_fail
+  ↓
+human_gate / Parallel
+```
+
 ## 原則
 
 - 每篇只聚焦一個小主題，依前後順序累積。
@@ -79,3 +94,4 @@ Planning → Figma → Implementation → Test → E2E → AI Acceptance → Hum
 - Auto Fix 必須有修改範圍與 Retry 上限。
 - Skill 建議依責任拆分，並明確定義 Input / Output Contract。
 - Deterministic Gate 優先處理可機器驗證的規則，AI Semantic Gate 再處理需要語意判斷的品質問題。
+- YAML Workflow 是本教學建立的 Automation Contract，不宣稱是 Claude Code 官方 YAML 語法。
