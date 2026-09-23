@@ -55,6 +55,7 @@ Auto Fix  Planning
 | 2026-09-21 | [Planning Gate → Auto Fix → Re-Gate](./2026-09-21-planning-gate-auto-fix.md) |
 | 2026-09-22 | [Planning → Figma → Implementation Contract](./2026-09-22-planning-figma-implementation-contract.md) |
 | 2026-09-23 | [YAML Workflow 01：Node + Dependency](./2026-09-23-yaml-workflow-01-node-dependency.md) |
+| 2026-09-24 | [YAML Workflow 02：on_pass / on_fail](./2026-09-24-yaml-workflow-02-on-pass-on-fail.md) |
 
 ## 核心迭代
 
@@ -95,3 +96,4 @@ human_gate / Parallel
 - Skill 建議依責任拆分，並明確定義 Input / Output Contract。
 - Deterministic Gate 優先處理可機器驗證的規則，AI Semantic Gate 再處理需要語意判斷的品質問題。
 - YAML Workflow 是本教學建立的 Automation Contract，不宣稱是 Claude Code 官方 YAML 語法。
+- `on_pass / on_fail` 只負責描述結果分支；Auto Fix 完成後仍必須 Re-Gate，不能自行宣布原 Gate PASS。
