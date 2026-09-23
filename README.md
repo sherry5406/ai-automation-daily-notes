@@ -4,6 +4,10 @@
 
 **Claude Code + Skills + Hooks + Gate Scripts + YAML Workflow → AI Development Automation**
 
+另外加入一條實務學習支線：
+
+**Angular × SignalR → 純前端串接 → 連線生命週期 → 即時事件 → 單一裝置單一頁籤 → Session Activity / 閒置登出**
+
 ## 教學路線
 
 ```text
@@ -56,6 +60,29 @@ Auto Fix  Planning
 | 2026-09-22 | [Planning → Figma → Implementation Contract](./2026-09-22-planning-figma-implementation-contract.md) |
 | 2026-09-23 | [YAML Workflow 01：Node + Dependency](./2026-09-23-yaml-workflow-01-node-dependency.md) |
 | 2026-09-24 | [YAML Workflow 02：on_pass / on_fail](./2026-09-24-yaml-workflow-02-on-pass-on-fail.md) |
+| 2026-09-24 | [Angular × SignalR｜原理](./2026-09-24-signalr-原理.md) |
+
+## Angular × SignalR 學習路線
+
+```text
+SignalR 原理
+    ↓
+Angular HubConnection
+    ↓
+連線生命週期
+    ↓
+接收後端事件
+    ↓
+斷線與自動重連
+    ↓
+單一裝置／單一頁籤
+    ↓
+有效 Activity
+    ↓
+Session LastActivityAt
+    ↓
+閒置登出／SessionExpired
+```
 
 ## 核心迭代
 
@@ -88,6 +115,7 @@ human_gate / Parallel
 ## 原則
 
 - 每篇只聚焦一個小主題，依前後順序累積。
+- Angular × SignalR 支線採純前端角度教學，假設後端 Hub 已經完成。
 - 優先提供可以直接在 Angular 專案操作的範例。
 - Claude Code Hooks / Skills / CLI 等會隨版本更新的內容，以最新官方文件為準。
 - Gate 負責驗收，Auto Fix 負責修正，不讓 Auto Fix 自己宣布 PASS。
@@ -97,3 +125,4 @@ human_gate / Parallel
 - Deterministic Gate 優先處理可機器驗證的規則，AI Semantic Gate 再處理需要語意判斷的品質問題。
 - YAML Workflow 是本教學建立的 Automation Contract，不宣稱是 Claude Code 官方 YAML 語法。
 - `on_pass / on_fail` 只負責描述結果分支；Auto Fix 完成後仍必須 Re-Gate，不能自行宣布原 Gate PASS。
+- SignalR 的 Session 最終有效性以後端規則為準；前端負責連線、事件處理、有效 Activity 回報與 UI 狀態。
