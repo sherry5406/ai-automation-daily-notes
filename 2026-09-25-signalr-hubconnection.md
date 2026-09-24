@@ -51,7 +51,7 @@ SignalR Hub
 
 `start()` 才是真的撥出去。
 
-Microsoft 官方 JavaScript Client 範例也是使用 `HubConnectionBuilder`、`withUrl()`、`build()`，最後呼叫 `connection.start()` 建立連線。citeturn0search0turn0search2
+Microsoft 官方 JavaScript Client 範例也是使用 `HubConnectionBuilder`、`withUrl()`、`build()`，最後呼叫 `connection.start()` 建立連線。
 
 ## 實際情境：企業系統通知
 
@@ -192,7 +192,7 @@ Reconnecting
 Connected
 ```
 
-SignalR JavaScript Client **預設不會自動重連**；如果要自動重連，需要另外設定 `withAutomaticReconnect()`。官方預設重連等待時間為 0、2、10、30 秒，共四次嘗試。citeturn0search0
+SignalR JavaScript Client **預設不會自動重連**；如果要自動重連，需要另外設定 `withAutomaticReconnect()`。官方預設重連等待時間為 0、2、10、30 秒，共四次嘗試。
 
 ## 今天練習
 
@@ -338,5 +338,4 @@ Connected / Disconnected
 
 - Microsoft Learn：ASP.NET Core SignalR JavaScript Client
 - Microsoft Learn：Get started with ASP.NET Core SignalR
-
-urlSignalR JavaScript Client 官方文件https://learn.microsoft.com/aspnet/core/signalr/javascript-client
+- https://learn.microsoft.com/aspnet/core/signalr/javascript-client
