@@ -61,6 +61,7 @@ Auto Fix  Planning
 | 2026-09-23 | [YAML Workflow 01：Node + Dependency](./2026-09-23-yaml-workflow-01-node-dependency.md) |
 | 2026-09-24 | [YAML Workflow 02：on_pass / on_fail](./2026-09-24-yaml-workflow-02-on-pass-on-fail.md) |
 | 2026-09-25 | [YAML Workflow 03：human_gate](./2026-09-25-yaml-workflow-03-human-gate.md) |
+| 2026-09-26 | [YAML Workflow 04：Parallel Execution](./2026-09-26-yaml-workflow-04-parallel-execution.md) |
 | 2026-09-24 | [Angular × SignalR｜原理](./2026-09-24-signalr-原理.md) |
 | 2026-09-25 | [Angular × SignalR｜第一步建立 HubConnection](./2026-09-25-signalr-hubconnection.md) |
 
@@ -131,4 +132,5 @@ Parallel
 - Deterministic Gate 優先處理可機器驗證的規則，AI Semantic Gate 再處理需要語意判斷的品質問題。
 - YAML Workflow 是本教學建立的 Automation Contract，不宣稱是 Claude Code 官方 YAML 語法。
 - `on_pass / on_fail / on_blocked` 負責描述結果分支；Auto Fix 完成後仍必須 Re-Gate，不能自行宣布原 Gate PASS。
+- Parallel Node 必須有明確的 Join Point；沒有 Dependency 且適合獨立執行的檢查才放入同一個 `parallel_group`。
 - SignalR 的 Session 最終有效性以後端規則為準；前端負責連線、事件處理、有效 Activity 回報與 UI 狀態。
