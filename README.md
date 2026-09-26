@@ -62,6 +62,7 @@ Auto Fix  Planning
 | 2026-09-24 | [YAML Workflow 02：on_pass / on_fail](./2026-09-24-yaml-workflow-02-on-pass-on-fail.md) |
 | 2026-09-25 | [YAML Workflow 03：human_gate](./2026-09-25-yaml-workflow-03-human-gate.md) |
 | 2026-09-26 | [YAML Workflow 04：Parallel Execution](./2026-09-26-yaml-workflow-04-parallel-execution.md) |
+| 2026-09-27 | [YAML Workflow 05：第一個完整可執行 Workflow](./2026-09-27-yaml-workflow-05-first-complete-workflow.md) |
 | 2026-09-24 | [Angular × SignalR｜原理](./2026-09-24-signalr-原理.md) |
 | 2026-09-25 | [Angular × SignalR｜第一步建立 HubConnection](./2026-09-25-signalr-hubconnection.md) |
 | 2026-09-26 | [Angular × SignalR｜連線生命週期](./2026-09-26-signalr-連線生命週期.md) |
