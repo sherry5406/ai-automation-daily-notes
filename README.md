@@ -64,6 +64,8 @@ Auto Fix  Planning
 | 2026-09-26 | [YAML Workflow 04：Parallel Execution](./2026-09-26-yaml-workflow-04-parallel-execution.md) |
 | 2026-09-24 | [Angular × SignalR｜原理](./2026-09-24-signalr-原理.md) |
 | 2026-09-25 | [Angular × SignalR｜第一步建立 HubConnection](./2026-09-25-signalr-hubconnection.md) |
+| 2026-09-26 | [Angular × SignalR｜連線生命週期](./2026-09-26-signalr-連線生命週期.md) |
+| 2026-09-27 | [Angular × SignalR｜接收後端事件](./2026-09-27-signalr-接收後端事件.md) |
 
 ## Angular × SignalR 學習路線
 
