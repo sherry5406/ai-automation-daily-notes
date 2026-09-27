@@ -63,6 +63,7 @@ Auto Fix  Planning
 | 2026-09-25 | [YAML Workflow 03：human_gate](./2026-09-25-yaml-workflow-03-human-gate.md) |
 | 2026-09-26 | [YAML Workflow 04：Parallel Execution](./2026-09-26-yaml-workflow-04-parallel-execution.md) |
 | 2026-09-27 | [YAML Workflow 05：第一個完整可執行 Workflow](./2026-09-27-yaml-workflow-05-first-complete-workflow.md) |
+| 2026-09-28 | [YAML Workflow 06：Claude Code Hook → Gate Script](./2026-09-28-yaml-workflow-06-claude-code-hook-gate.md) |
 | 2026-09-24 | [Angular × SignalR｜原理](./2026-09-24-signalr-原理.md) |
 | 2026-09-25 | [Angular × SignalR｜第一步建立 HubConnection](./2026-09-25-signalr-hubconnection.md) |
 | 2026-09-26 | [Angular × SignalR｜連線生命週期](./2026-09-26-signalr-連線生命週期.md) |
@@ -136,4 +137,5 @@ Parallel
 - YAML Workflow 是本教學建立的 Automation Contract，不宣稱是 Claude Code 官方 YAML 語法。
 - `on_pass / on_fail / on_blocked` 負責描述結果分支；Auto Fix 完成後仍必須 Re-Gate，不能自行宣布原 Gate PASS。
 - Parallel Node 必須有明確的 Join Point；沒有 Dependency 且適合獨立執行的檢查才放入同一個 `parallel_group`。
+- Hook 負責事件觸發，Gate 負責驗收，Workflow 負責 orchestration；不要讓 Hook 自己變成第二個 Workflow Engine。
 - SignalR 的 Session 最終有效性以後端規則為準；前端負責連線、事件處理、有效 Activity 回報與 UI 狀態。
