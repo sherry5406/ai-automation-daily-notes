@@ -68,6 +68,7 @@ Auto Fix  Planning
 | 2026-09-25 | [Angular × SignalR｜第一步建立 HubConnection](./2026-09-25-signalr-hubconnection.md) |
 | 2026-09-26 | [Angular × SignalR｜連線生命週期](./2026-09-26-signalr-連線生命週期.md) |
 | 2026-09-27 | [Angular × SignalR｜接收後端事件](./2026-09-27-signalr-接收後端事件.md) |
+| 2026-09-28 | [Angular × SignalR｜收到事件後：update() 還是 Call API？](./2026-09-28-signalr-update-vs-api.md) |
 
 ## Angular × SignalR 學習路線
 
@@ -79,6 +80,8 @@ Angular HubConnection
 連線生命週期
     ↓
 接收後端事件
+    ↓
+update() vs Call API
     ↓
 斷線與自動重連
     ↓
