@@ -70,6 +70,7 @@ Auto Fix  Planning
 | 2026-09-27 | [Angular × SignalR｜接收後端事件](./2026-09-27-signalr-接收後端事件.md) |
 | 2026-09-28 | [Angular × SignalR｜收到事件後：update() 還是 Call API？](./2026-09-28-signalr-update-vs-api.md) |
 | 2026-09-29 | [Angular × SignalR｜斷線與自動重連](./2026-09-29-signalr-斷線自動重連.md) |
+| 2026-09-30 | [Angular × SignalR｜單一裝置、單一頁籤](./2026-09-30-signalr-單一裝置單一頁籤.md) |
 
 ## Angular × SignalR 學習路線
 
@@ -87,6 +88,8 @@ update() vs Call API
 斷線與自動重連
     ↓
 單一裝置／單一頁籤
+    ↓
+Leader Election / Tab Coordination
     ↓
 有效 Activity
     ↓
