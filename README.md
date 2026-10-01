@@ -72,6 +72,7 @@ Auto Fix  Planning
 | 2026-09-29 | [Angular × SignalR｜斷線與自動重連](./2026-09-29-signalr-斷線自動重連.md) |
 | 2026-09-30 | [Angular × SignalR｜單一裝置、單一頁籤](./2026-09-30-signalr-單一裝置單一頁籤.md) |
 | 2026-10-01 | [Angular × SignalR｜Leader Election：多頁籤到底誰負責連 SignalR？](./2026-10-01-signalr-leader-election.md) |
+| 2026-10-02 | [Angular × SignalR｜Leader 失效後怎麼接班？](./2026-10-02-signalr-leader-failover.md) |
 
 ## Angular × SignalR 學習路線
 
@@ -91,6 +92,8 @@ update() vs Call API
 單一裝置／單一頁籤
     ↓
 Leader Election / Tab Coordination
+    ↓
+Leader Failover
     ↓
 有效 Activity
     ↓
