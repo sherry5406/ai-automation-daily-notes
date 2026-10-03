@@ -74,6 +74,7 @@ Auto Fix  Planning
 | 2026-10-01 | [Angular × SignalR｜Leader Election：多頁籤到底誰負責連 SignalR？](./2026-10-01-signalr-leader-election.md) |
 | 2026-10-02 | [Angular × SignalR｜Leader 失效後怎麼接班？](./2026-10-02-signalr-leader-failover.md) |
 | 2026-10-03 | [Angular × SignalR｜有效 Activity：什麼操作才算使用者還在使用系統？](./2026-10-03-signalr-有效-activity.md) |
+| 2026-10-04 | [Angular × SignalR｜Activity 回報頻率](./2026-10-04-signalr-activity-回報頻率.md) |
 
 ## Angular × SignalR 學習路線
 
@@ -97,6 +98,8 @@ Leader Election / Tab Coordination
 Leader Failover
     ↓
 有效 Activity
+    ↓
+Activity 回報頻率
     ↓
 Session LastActivityAt
     ↓
