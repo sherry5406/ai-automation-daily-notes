@@ -66,7 +66,7 @@ Auto Fix  Planning
 | 2026-09-28 | [YAML Workflow 06：Claude Code Hook → Gate Script](./2026-09-28-yaml-workflow-06-claude-code-hook-gate.md) |
 | 2026-09-24 | [Angular × SignalR｜原理](./2026-09-24-signalr-原理.md) |
 | 2026-09-25 | [Angular × SignalR｜第一步建立 HubConnection](./2026-09-25-signalr-hubconnection.md) |
-| 2026-09-26 | [Angular × SignalR｜連線生命週期](./2026-09-26-signalr-連線生命週期.md) |
+| 2026-09-26 | [Angular × SignalR｜連線生命週期（4 種狀態）](./2026-09-26-signalr-連線生命週期.md) |
 | 2026-09-27 | [Angular × SignalR｜接收後端事件](./2026-09-27-signalr-接收後端事件.md) |
 | 2026-09-28 | [Angular × SignalR｜收到事件後：update() 還是 Call API？](./2026-09-28-signalr-update-vs-api.md) |
 | 2026-09-29 | [Angular × SignalR｜斷線與自動重連](./2026-09-29-signalr-斷線自動重連.md) |
@@ -76,6 +76,12 @@ Auto Fix  Planning
 | 2026-10-03 | [Angular × SignalR｜有效 Activity：什麼操作才算使用者還在使用系統？](./2026-10-03-signalr-有效-activity.md) |
 | 2026-10-04 | [Angular × SignalR｜Activity 回報頻率](./2026-10-04-signalr-activity-回報頻率.md) |
 | 2026-10-05 | [Angular × SignalR｜Session LastActivityAt](./2026-10-05-signalr-session-lastactivityat.md) |
+| 2026-10-06 | [Angular × SignalR｜Idle Time](./2026-10-06-signalr-idle-time.md) |
+| 2026-10-07 | [Angular × SignalR｜Idle Warning](./2026-10-07-signalr-idle-warning.md) |
+| 2026-10-08 | [Angular × SignalR｜Idle Warning 倒數計時](./2026-10-08-signalr-idle-warning-countdown.md) |
+| 2026-10-09 | [Angular × SignalR｜Session Expired 與前端登出流程](./2026-10-09-signalr-session-expired.md) |
+| 2026-10-10 | [Angular × SignalR｜集中處理 HTTP 401 與 SessionExpired](./2026-10-10-signalr-集中處理401與sessionexpired.md) |
+| 2026-10-11 | [Angular × SignalR｜登入後啟動、登出時停止連線](./2026-10-11-signalr-login-logout-lifecycle.md) |
 
 ## Angular × SignalR 學習路線
 
@@ -84,7 +90,7 @@ SignalR 原理
     ↓
 Angular HubConnection
     ↓
-連線生命週期
+連線生命週期（Disconnected / Connecting / Connected / Reconnecting）
     ↓
 接收後端事件
     ↓
@@ -106,7 +112,15 @@ Session LastActivityAt
     ↓
 Idle Time
     ↓
-閒置登出／SessionExpired
+Idle Warning
+    ↓
+Idle Warning 倒數計時
+    ↓
+Session Expired
+    ↓
+集中處理 HTTP 401 與 SignalR SessionExpired
+    ↓
+登入後啟動／登出時停止 SignalR
 ```
 
 ## 核心迭代
