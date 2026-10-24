@@ -122,6 +122,8 @@ Session Expired
 集中處理 HTTP 401 與 SignalR SessionExpired
     ↓
 登入後啟動／登出時停止 SignalR
+    ↓
+共用 Promise，避免重複呼叫 start()
 ```
 
 ## 核心迭代
