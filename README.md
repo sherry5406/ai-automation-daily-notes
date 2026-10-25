@@ -83,6 +83,7 @@ Auto Fix  Planning
 | 2026-10-10 | [Angular × SignalR｜集中處理 HTTP 401 與 SessionExpired](./2026-10-10-signalr-集中處理401與sessionexpired.md) |
 | 2026-10-11 | [Angular × SignalR｜登入後啟動、登出時停止連線](./2026-10-11-signalr-login-logout-lifecycle.md) |
 | 2026-10-25 | [Angular × SignalR｜使用共用 Promise 避免重複呼叫 start()](./2026-10-25-signalr-prevent-duplicate-start.md) |
+| 2026-10-26 | [Angular × SignalR｜避免 start() 與 stop() 互相競爭](./2026-10-26-signalr-prevent-start-stop-race.md) |
 
 ## Angular × SignalR 學習路線
 
@@ -124,6 +125,8 @@ Session Expired
 登入後啟動／登出時停止 SignalR
     ↓
 共用 Promise，避免重複呼叫 start()
+    ↓
+生命週期佇列，避免 start() / stop() 競爭
 ```
 
 ## 核心迭代
